@@ -1,8 +1,24 @@
-.main {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #888;
+main {
+    background-color: brown;
+    font: 1em sans-serif;
+    margin: 0 auto;
+}
+
+h1 {
+    font: 2em sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.link:hover{
+    color: red;
+}
+
+.link:visited{
+    color: red;
+}
+
+img {
+    width: 60%;
+    border: 100px solid black;
 }
