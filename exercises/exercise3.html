@@ -1,89 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
-    <title>HTML5 & GitHub Pages - Exercise 3</title>
-    <meta charset="utf-8" />
-    <meta name="author" content="HAMK" />
-    <meta name="description" content="Informaatiota hausta opettajankoulutukseen." />
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mozilla splash page</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <style>
+      /* header and body setup */
 
-    <link rel="stylesheet" href="..\styles\style.css" type="text/css">
+      html {
+        font-family: 'Open Sans', sans-serif;
+        background: url(../images/pattern.png);
+      }
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
- </head>
- <body>
+      body {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+      }
 
-    <img 
-    class = "img-fluid"
-    src="..\images\opettajankoulutus1.jpg" 
-    alt="Opettajankoulutus">
+      /* Header styling */
+
+      header {
+        height: 150px;
+      }
+
+      header img {
+        width: 100px;
+        position: absolute;
+        right: 32.5px;
+        top: 32.5px;
+      }
+
+      h1 {
+        font-size: 50px;
+        line-height: 140px;
+        margin: 0 0 0 32.5px;
+      }
+
+      /* main section and video styling */
+
+      main {
+        background: #ccc;
+      }
+
+      article {
+        padding: 20px;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      p {
+        line-height: 2;
+      }
+
+      iframe {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 100%;
+      }
+
+      /* further info links */
+
+      .further-info {
+        clear: left;
+        padding: 40px 0;
+        background: #c13832;
+        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+                    inset 0 -3px 2px rgba(0,0,0,0.5);
+      }
+
+      .further-info a {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+
+      .further-info img {
+        max-width: 100%;
+      }
+
+      .clearfix {
+        clear: both;
+      }
+
+      /* Red panda image */
+
+      .red-panda img {
+        display: block;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <h1>HAKU AMMATILLISIIN OPETTAJANKOULUTUKSIIN</h1>
-        <p>Sinä osaat, opeta se muille - Pätevöidy opettajaksi</p>
+      <h1>Mozilla</h1>
+      <!-- insert <img> element, link to the small
+          version of the Firefox logo -->
+
+  <img src="../images/firefox_logo-only_RGB.png" alt="Firefox logo">
+
     </header>
-    
-    <h2>HTML5 & GitHub Page</h2>
 
     <main>
-    <p>Sinustako ammatillinen opettaja, ammatillinen erityisopettaja tai ammatillinen opinto-ohjaaja? Lue alta lisää koulutuksistamme, hakuinfoista tai ole meihin rohkeasti yhteydessä.</p>
-    <p><b>Hakuaika: 3.-18.1.2024.</b></p>
-    Haku ammatillisiin opettajankoulutuksiin järjestetään valtakunnallisesti joka tammikuu. <u>Emme ota vastaan hakemuksia hakuajan ulkopuolella.</u>
-    <p><i>Alapuolelta löydät tietoa eri koulutuksistamme, joihin voit hakea tammikuun haussa.</i></p>
+      <article>
+        <!-- insert iframe from youtube -->
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6NcIJXTlugc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Rocking the free web</h2>
+
+        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+
+        <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
+      </article>
+
+      <div class="further-info">
+        <!-- insert images with srcsets and sizes -->
+        <a href="https://www.mozilla.org/en-US/firefox/new/">
+          <img src="../images/mozilla-dinosaur-head.png">
+        </a>
+        <a href="https://www.mozilla.org/">
+          <img src="../images/firefox-addons.jpg">
+        </a>
+        <a href="https://addons.mozilla.org/">
+          <img src="../images/mdn.svg">
+        </a>
+        <a href="https://developer.mozilla.org/en-US/">
+          <img src="../images/red-panda.jpg">
+        </a>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="red-panda">
+        <!-- insert picture element -->
+        <picture>
+          <source media="(min-width: 800px)" srcset="../images/red-panda.jpg">
+          <source media="(min-width: 450px)" srcset="../images/red-panda.jpg">
+          <img src="../images/red-panda-small.jpg" alt="Red panda">
+      </div>
+
     </main>
-
-    <p></p>
-
-<!--  Exercise 3: Validation & Adding More Elements -->
-    
-    <dl>
-        <dt>Milloin voit hakea?</dt>
-        <dd>Haku ammatillisiin opettajankoulutuksiin järjestetään valtakunnallisesti joka tammikuu. Emme ota vastaan hakemuksia hakuajan ulkopuolella.</dd>
-    </dl>
-
-    <dl>
-        <dt>Miten haet?</dt>
-        <dd>Hakulomake löytyy osoitteesta <a href="https://www.opintopolku.fi">www.opintopolku.fi</a>. Hakulomakkeen täyttämisen jälkeen lähetä hakemus.</dd>
-    </dl>
-
-    <dl>
-        <dt>Mitä liitteitä hakemukseen tarvitaan?</dt>
-        <dd>Hakemukseen tarvitaan liitteeksi kopio tutkintotodistuksesta ja työtodistuksesta.</dd>
-    </dl>
-
-    <p></p>
-
-    <blockquote
-        cite="https://www.hamk.fi/opinto-ohjaajat/ammatillinen-opettajankoulutus/">
-        <p>”Opettajankoulutuksessa opit oppimisen ohjaamista erilaisissa oppimisympäristöissä erilaisten opiskelijoiden parissa. Opit opetuksen suunnittelua, opetus- ja ohjausmenetelmiä, osaamisen arviointia, dialogin taitoja, verkostoissa toimimista sekä kasvatustieteellisiä teorioita ja käsitteitä.”</p>
-        <footer>-HAMK</footer>
-    </blockquote>
-
-    <a href="https://dipaish.github.io/www2020/css/devenvironment.png" download> 
-    Lataa lisätietoa koulutuksistamme tästä!</a>
-
-    <footer>
-        <p>2024 HAMK</p>
-    </footer>
-
-    <address>
-        <p>Hämeen ammattikorkeakoulu HAMK</p>
-        <p>PL 230</p>
-        <p>13101 Hämeenlinna</p>
-    </address>
-
-    <address>
-        Address: Siilitie 14<br>
-        00980, Helsinki<br>
-        Finland.
-    </address>
-
-    <nav>
-        <ul>
-            <li><a class="link" href="..\index.html">Home</a></li>
-            </ul>
-    </nav>
-    
-    <a href="#top">To the top</a>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>

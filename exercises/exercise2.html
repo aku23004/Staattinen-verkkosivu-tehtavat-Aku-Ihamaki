@@ -1,26 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-    <title><h2>HTML5 & GitHub Pages - Exercise 2</h2></title>
+    <title>HTML5 & GitHub Pages - Exercise 3</title>
     <meta charset="utf-8" />
     <meta name="author" content="HAMK" />
     <meta name="description" content="Informaatiota hausta opettajankoulutukseen." />
-    <link rel="stylesheet" type="..\styles\style.css" href="../CSS/main.css">
+
+    <link rel="stylesheet" href="..\styles\style.css" type="text/css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
  </head>
  <body>
 
-    <img src="..\images\opettajankoulutus1.jpg" alt="Opettajankoulutus" style="float: right; width: 50%;">
+    <img 
+    class = "img-fluid"
+    src="..\images\opettajankoulutus1.jpg" 
+    alt="Opettajankoulutus">
     <header>
         <h1>HAKU AMMATILLISIIN OPETTAJANKOULUTUKSIIN</h1>
         <p>Sinä osaat, opeta se muille - Pätevöidy opettajaksi</p>
     </header>
     
+    <h2>HTML5 & GitHub Page</h2>
+
     <main>
     <p>Sinustako ammatillinen opettaja, ammatillinen erityisopettaja tai ammatillinen opinto-ohjaaja? Lue alta lisää koulutuksistamme, hakuinfoista tai ole meihin rohkeasti yhteydessä.</p>
     <p><b>Hakuaika: 3.-18.1.2024.</b></p>
     Haku ammatillisiin opettajankoulutuksiin järjestetään valtakunnallisesti joka tammikuu. <u>Emme ota vastaan hakemuksia hakuajan ulkopuolella.</u>
     <p><i>Alapuolelta löydät tietoa eri koulutuksistamme, joihin voit hakea tammikuun haussa.</i></p>
     </main>
+
+    <p></p>
+
+<!--  Exercise 3: Validation & Adding More Elements -->
+    
+    <dl>
+        <dt>Milloin voit hakea?</dt>
+        <dd>Haku ammatillisiin opettajankoulutuksiin järjestetään valtakunnallisesti joka tammikuu. Emme ota vastaan hakemuksia hakuajan ulkopuolella.</dd>
+    </dl>
+
+    <dl>
+        <dt>Miten haet?</dt>
+        <dd>Hakulomake löytyy osoitteesta <a href="https://www.opintopolku.fi">www.opintopolku.fi</a>. Hakulomakkeen täyttämisen jälkeen lähetä hakemus.</dd>
+    </dl>
+
+    <dl>
+        <dt>Mitä liitteitä hakemukseen tarvitaan?</dt>
+        <dd>Hakemukseen tarvitaan liitteeksi kopio tutkintotodistuksesta ja työtodistuksesta.</dd>
+    </dl>
+
+    <p></p>
+
+    <blockquote
+        cite="https://www.hamk.fi/opinto-ohjaajat/ammatillinen-opettajankoulutus/">
+        <p>”Opettajankoulutuksessa opit oppimisen ohjaamista erilaisissa oppimisympäristöissä erilaisten opiskelijoiden parissa. Opit opetuksen suunnittelua, opetus- ja ohjausmenetelmiä, osaamisen arviointia, dialogin taitoja, verkostoissa toimimista sekä kasvatustieteellisiä teorioita ja käsitteitä.”</p>
+        <footer>-HAMK</footer>
+    </blockquote>
+
+    <a href="https://dipaish.github.io/www2020/css/devenvironment.png" download> 
+    Lataa lisätietoa koulutuksistamme tästä!</a>
 
     <footer>
         <p>2024 HAMK</p>
@@ -32,10 +70,20 @@
         <p>13101 Hämeenlinna</p>
     </address>
 
+    <address>
+        Address: Siilitie 14<br>
+        00980, Helsinki<br>
+        Finland.
+    </address>
+
     <nav>
         <ul>
-            <li><a href="..\rootfolder\index.html">Home</a></li>
+            <li><a class="link" href="..\index.html">Home</a></li>
             </ul>
     </nav>
+    
+    <a href="#top">To the top</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
