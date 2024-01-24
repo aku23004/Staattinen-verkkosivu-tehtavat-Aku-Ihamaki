@@ -1,0 +1,64 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header, main, aside, footer {
+    padding: 20px;
+    margin: 10px;
+}
+
+header {
+    background-color: purple;
+    color: white;
+    text-align: center;
+}
+
+aside.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    align-self: flex-end;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+}
+
+main .content {
+    background-color: turquoise;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+main .content h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main .content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.custom-table {
+    margin-top: 20px;
+}
+
+.custom-form {
+    margin-top: 20px;
+}
